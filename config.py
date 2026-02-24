@@ -1,0 +1,27 @@
+from pydantic import BaseModel, HttpUrl
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class HTTPClientConfig(BaseModel):
+    url: HttpUrl
+    timeout: float
+
+    @property
+    def client_url(self) -> str:
+        return str('self.url')
+
+
+class Settings(BaseSettings):
+    model_config = SettingsConfigDict(
+        env_file='.env',
+        env_file_encoding='utf-8',
+        env_nested_delimiter='.'
+    )
+
+    http_client: HTTPClientConfig
+
+
+
+
+# settings = Settings()
+# print(settings.http_client.client_url, settings.http_client.timeout)
