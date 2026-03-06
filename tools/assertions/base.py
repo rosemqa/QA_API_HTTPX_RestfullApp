@@ -15,7 +15,7 @@ def assert_status_code(actual: int, expected: int):
 
 @allure.step("Check that {name} equals to {expected}")
 def assert_equal(actual: Any, expected: Any, name: str):
-    logger.info(f'Check that "{name}" equals to {expected}')
+    logger.info(f'Check that "{name}" equals to "{expected}"')
 
     assert actual == expected, \
-        f'Incorrect value: "{name}". Expected value: {expected}. Actual value: {actual}'
+        f'Incorrect value: "{name}". Expected value: "{expected}". Actual value: "{actual}".'

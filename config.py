@@ -8,7 +8,7 @@ class HTTPClientConfig(BaseModel):
 
     @property
     def client_url(self) -> str:
-        return str('self.url')
+        return str(self.url)
 
 
 class Settings(BaseSettings):
@@ -21,7 +21,5 @@ class Settings(BaseSettings):
     http_client: HTTPClientConfig
 
 
-
-
 # settings = Settings()
-# print(settings.http_client.client_url, settings.http_client.timeout)
+# print(settings.http_client.client_url, settings.http_client.timeout, settings.http_client.url)
