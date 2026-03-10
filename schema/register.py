@@ -18,8 +18,10 @@ class RegisterDataPayload(BaseModel):
     # без validate_default не будет проверять тип данных (str)
 
 
-class RegisterDataModel(RegisterDataPayload):
+class RegisterDataModel(BaseModel):
     user_id: int
+    username: str
+    password: str
 
 
 class MissingRequiredFieldModel(BaseModel):

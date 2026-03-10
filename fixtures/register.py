@@ -1,6 +1,7 @@
 import pytest
 from clients.register_client import get_register_client, RegisterClient
 from config import Settings
+from schema.register import RegisterDataModel
 
 
 @pytest.fixture
@@ -10,7 +11,7 @@ def register_client(settings: Settings) -> RegisterClient:
 
 
 @pytest.fixture
-def function_register(register_client: RegisterClient):
+def function_register(register_client: RegisterClient) -> RegisterDataModel:
     """Фикстура создает нового пользователя перед тестом и удаляет его после выполнения теста"""
     register = register_client.register_user()
     yield register

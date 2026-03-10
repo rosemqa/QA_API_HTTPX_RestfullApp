@@ -2,7 +2,7 @@ import allure
 from httpx import Response
 from clients.base_client import BaseClient, get_http_client
 from config import Settings
-from schema.register import RegisterDataPayload, CreateUserModel
+from schema.register import RegisterDataPayload, CreateUserModel, RegisterDataModel
 from tools.routes import APIRoutes
 
 
@@ -14,14 +14,20 @@ class RegisterClient(BaseClient):
             json=register.model_dump(mode='json')
         )
 
-    def register_user(self) -> CreateUserModel:
+    def register_user(self) -> RegisterDataModel:
         """Упрощенный метод для создания нового пользователя"""
         # Создаем запрос с фейковыми данными (по умолчанию для теста)
         request = RegisterDataPayload()
         # Отправляем запрос на создание
         response = self.register_user_api(request)
         # Возвращаем созданного пользователя как объект схемы (модели)
-        return CreateUserModel.model_validate_json(response.text)
+        # return RegisterDataModel.model_validate_json(response.text)
+        register = CreateUserModel.model_validate_json(response.text)
+        return RegisterDataModel(
+            user_id=register.uuid,
+            username=request.username,
+            password=request.password
+        )
 
     @allure.step('Create two users with the same username')
     def register_user_twice_api(self, register: RegisterDataPayload) -> Response:

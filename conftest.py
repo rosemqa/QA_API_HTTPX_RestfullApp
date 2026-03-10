@@ -1,5 +1,6 @@
 
 pytest_plugins = (
     'fixtures.settings',
-    'fixtures.register'
+    'fixtures.register',
+    'fixtures.auth'
 )
