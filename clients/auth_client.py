@@ -14,6 +14,11 @@ class AuthClient(BaseClient):
             json={"username": user_name, "password": password}
         )
 
+    def login_user(self, user_name: str, password: str) -> AuthModel:
+        response = self.auth_user_api(user_name, password)
+        login = AuthModel.model_validate_json(response.text)
+        return login
+
 
 def get_auth_client(settings: Settings) -> AuthClient:
     return AuthClient(client=get_http_client(settings.http_client))
