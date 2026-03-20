@@ -31,3 +31,9 @@ class GetUserInfoModel(BaseModel):
     userID: int
     phone: str
     email: str
+
+
+class ErrorUserInfoModel(BaseModel):
+    description: str
+    error: str
+    status_code: int

@@ -7,3 +7,4 @@ responses~=0.25.8
 pydantic-settings~=2.13.1
 httpx~=0.28.1
 jsonschema~=4.26.0
+respx~=0.22.0
