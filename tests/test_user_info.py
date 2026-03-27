@@ -11,6 +11,7 @@ from tools.assertions.user_info import assert_add_user_info, assert_update_user_
     assert_non_existent_user_info, assert_internal_server_error
 
 
+@allure.epic('User info')
 class TestUserInfo:
     @allure.title('Can add the user info by user id')
     def test_add_user_info(self, check, user_info_client: UserInfoClient, function_login: UserLoginModel):
