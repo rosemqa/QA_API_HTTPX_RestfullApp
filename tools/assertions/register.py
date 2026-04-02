@@ -30,7 +30,5 @@ def assert_create_user_without_required_field(
         expected: str
 ):
     logger.info(f"Check create user without '{expected}' field")
-    if expected == 'username':
-        assert_equal(actual.message, {"username": "This field cannot be blank."}, 'message')
-    else:
-        assert_equal(actual.message, {"password": "This field cannot be blank."}, 'message')
+
+    assert_equal(actual.message, {f"{expected}": "This field cannot be blank."}, 'message')

@@ -1,3 +1,5 @@
+import random
+
 from faker import Faker
 
 
@@ -25,6 +27,15 @@ class Fake:
 
     def home_number(self) -> str:
         return self.faker.building_number()
+
+    def price(self) -> str:
+        return str(random.randint(10, 500))
+
+    def item_description(self) -> str:
+        return self.faker.text(70)
+
+    def image_url(self) -> str:
+        return self.faker.image_url()
 
 
 fake = Fake(faker=Faker())

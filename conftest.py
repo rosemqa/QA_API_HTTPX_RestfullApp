@@ -4,5 +4,6 @@ pytest_plugins = (
     'fixtures.register',
     'fixtures.auth',
     'fixtures.user_info',
-    'fixtures.store'
+    'fixtures.store',
+    'fixtures.store_item'
 )

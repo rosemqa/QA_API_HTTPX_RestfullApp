@@ -7,6 +7,8 @@ class APIRoutes(str, Enum):
     USER_INFO = '/user_info'
     AUTH = '/auth'
     STORE = '/store'
+    STORE_ITEM = '/item'
+    STORE_ITEMS = '/items'
 
     def __str__(self):
         return self.value
