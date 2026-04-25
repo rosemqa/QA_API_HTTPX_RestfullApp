@@ -4,7 +4,7 @@ from tools.fakers import fake
 
 class CreateUserModel(BaseModel):
     # model_config = ConfigDict(extra='forbid', strict=True)  # extra - валидирует на лишнии поля,
-    # strict - не позволяет автоматически преобразовывать данные (строки в число)
+    # strict - не позволяет автоматически преобразовывать данные (строки в число, float в int)
     message: str
     uuid: int
 

@@ -56,7 +56,7 @@ class TestStoreItem:
             function_login: UserLoginModel,
             empty_field
     ):
-        response = store_item_client.add_item_with_empty_required_field_api_api(empty_field, function_login.token)
+        response = store_item_client.add_item_with_empty_required_field_api(empty_field, function_login.token)
         model = MessageModel.model_validate_json(response.text)
 
         assert_status_code(response.status_code, HTTPStatus.BAD_REQUEST)
@@ -104,7 +104,7 @@ class TestStoreItem:
 
         validate_json_schema(response.json(), model.model_json_schema())
 
-    @allure.description('Can edit item info')
+    @allure.title('Can edit item info')
     def test_update_item(
             self,
             check,
@@ -121,7 +121,7 @@ class TestStoreItem:
 
         validate_json_schema(response.json(), model.model_json_schema())
 
-    @allure.description('Can get the store item list, it contains the added item')
+    @allure.title('Can get the store item list, it contains the added item')
     def test_get_store_items(
             self,
             store_item_client: StoreItemClient,

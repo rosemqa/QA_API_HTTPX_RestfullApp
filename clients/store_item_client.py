@@ -38,7 +38,7 @@ class StoreItemClient(BaseClient):
         )
 
     @allure.step('Add item with empty required field')
-    def add_item_with_empty_required_field_api_api(self, empty_field: str, token: str):
+    def add_item_with_empty_required_field_api(self, empty_field: str, token: str):
         item_name = fake.username()
         item = StoreItemPayloads().model_dump()
         item[empty_field] = ''

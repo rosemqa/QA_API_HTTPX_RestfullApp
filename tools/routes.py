@@ -9,6 +9,7 @@ class APIRoutes(str, Enum):
     STORE = '/store'
     STORE_ITEM = '/item'
     STORE_ITEMS = '/items'
+    USER_BALANCE = '/balance'
 
     def __str__(self):
         return self.value

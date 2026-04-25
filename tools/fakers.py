@@ -37,5 +37,8 @@ class Fake:
     def image_url(self) -> str:
         return self.faker.image_url()
 
+    def user_balance(self) -> int:
+        return self.faker.random_number(digits=3)
+
 
 fake = Fake(faker=Faker())
