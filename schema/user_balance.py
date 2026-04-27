@@ -11,5 +11,9 @@ class BalancePayloads(BaseModel):
     balance: int = Field(default_factory=fake.user_balance)
 
 
+class LowBalancePayloads(BaseModel):
+    balance: int = Field(default_factory=fake.low_balance)
+
+
 class BalanceMessageModel(BaseModel):
     message: str

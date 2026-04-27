@@ -1,5 +1,4 @@
 import random
-
 from faker import Faker
 
 
@@ -38,7 +37,10 @@ class Fake:
         return self.faker.image_url()
 
     def user_balance(self) -> int:
-        return self.faker.random_number(digits=3)
+        return random.randint(600, 1000)
+
+    def low_balance(self) -> int:
+        return random.randint(0, 5)
 
 
 fake = Fake(faker=Faker())

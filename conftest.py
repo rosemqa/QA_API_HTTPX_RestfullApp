@@ -6,5 +6,6 @@ pytest_plugins = (
     'fixtures.user_info',
     'fixtures.store',
     'fixtures.store_item',
-    'fixtures.user_balance'
+    'fixtures.user_balance',
+    'fixtures.payment'
 )
