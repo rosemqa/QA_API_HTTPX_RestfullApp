@@ -1,6 +1,7 @@
 allure-pytest~=2.15.3
 pytest~=9.0.2
 Faker~=26.0.0
+pytest-rerunfailures~=16.1
 pytest-check~=2.5.0
 pydantic~=2.7.4
 responses~=0.25.8
@@ -8,3 +9,4 @@ pydantic-settings~=2.13.1
 httpx~=0.28.1
 jsonschema~=4.26.0
 respx~=0.22.0
+pytest-xdist~=3.8.0
