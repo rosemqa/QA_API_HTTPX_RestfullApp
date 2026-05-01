@@ -1,0 +1,12 @@
+2026-05-01 22:05:24,093 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,254 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,255 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,295 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,296 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/store/brandonblair
+2026-05-01 22:05:24,309 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/store/brandonblair
+2026-05-01 22:05:24,310 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/store/brandonblair
+2026-05-01 22:05:24,315 | HTTP_CLIENT | INFO | Got response 400 BAD REQUEST from http://localhost:56733/store/brandonblair
+2026-05-01 22:05:24,315 | BASE_ASSERTIONS | INFO | Check that response status code equals to 400
+2026-05-01 22:05:24,315 | STORE_ASSERTIONS | INFO | Check add store twice
+2026-05-01 22:05:24,315 | BASE_ASSERTIONS | INFO | Check that "message" equals to "A store with name 'brandonblair' already exists."
+2026-05-01 22:05:24,316 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

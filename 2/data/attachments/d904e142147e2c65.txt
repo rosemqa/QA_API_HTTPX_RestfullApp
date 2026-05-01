@@ -1,0 +1,6 @@
+2026-05-01 22:05:23,801 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:23,807 | HTTP_CLIENT | INFO | Got response 400 BAD REQUEST from http://localhost:56733/register
+2026-05-01 22:05:23,807 | BASE_ASSERTIONS | INFO | Check that response status code equals to 400
+2026-05-01 22:05:23,807 | REGISTER_ASSERTIONS | INFO | Check create user without 'password' field
+2026-05-01 22:05:23,808 | BASE_ASSERTIONS | INFO | Check that "message" equals to "{'password': 'This field cannot be blank.'}"
+2026-05-01 22:05:23,813 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

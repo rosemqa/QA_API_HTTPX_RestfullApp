@@ -1,0 +1,10 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make GET request to http://localhost:56733/store/fake_store
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 404 NOT FOUND from http://localhost:56733/store/fake_store
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 404
+INFO     STORE_ASSERTIONS:store.py:41 Check get store with not existed name
+INFO     BASE_ASSERTIONS:base.py:18 Check that "message" equals to "Store not found"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

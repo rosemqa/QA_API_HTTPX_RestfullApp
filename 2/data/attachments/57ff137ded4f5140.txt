@@ -1,0 +1,15 @@
+2026-05-01 22:05:24,438 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,452 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,453 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,457 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,460 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/item/eddie72
+2026-05-01 22:05:24,472 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/item/eddie72
+2026-05-01 22:05:24,474 | HTTP_CLIENT | INFO | Make GET request to http://localhost:56733/item/eddie72
+2026-05-01 22:05:24,480 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/item/eddie72
+2026-05-01 22:05:24,481 | BASE_ASSERTIONS | INFO | Check that response status code equals to 200
+2026-05-01 22:05:24,481 | STORE_ITEM_ASSERTIONS | INFO | Check get store item
+2026-05-01 22:05:24,481 | BASE_ASSERTIONS | INFO | Check that "name" equals to "eddie72"
+2026-05-01 22:05:24,481 | BASE_ASSERTIONS | INFO | Check that "price" equals to "431"
+2026-05-01 22:05:24,481 | BASE_ASSERTIONS | INFO | Check that "description" equals to "Health low minute light up here ask I."
+2026-05-01 22:05:24,481 | BASE_ASSERTIONS | INFO | Check that "image" equals to "https://dummyimage.com/647x933"
+2026-05-01 22:05:24,482 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

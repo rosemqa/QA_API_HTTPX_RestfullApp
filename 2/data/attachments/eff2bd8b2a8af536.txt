@@ -1,0 +1,15 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/item/eddie72
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/item/eddie72
+INFO     HTTP_CLIENT:event_hooks.py:9 Make GET request to http://localhost:56733/item/eddie72
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/item/eddie72
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 200
+INFO     STORE_ITEM_ASSERTIONS:store_item.py:55 Check get store item
+INFO     BASE_ASSERTIONS:base.py:18 Check that "name" equals to "eddie72"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "price" equals to "431"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "description" equals to "Health low minute light up here ask I."
+INFO     BASE_ASSERTIONS:base.py:18 Check that "image" equals to "https://dummyimage.com/647x933"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

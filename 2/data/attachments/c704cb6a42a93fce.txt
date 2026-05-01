@@ -1,0 +1,11 @@
+2026-05-01 22:05:24,552 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,640 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,641 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,652 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,654 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/item/uvazquez
+2026-05-01 22:05:24,715 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/item/uvazquez
+2026-05-01 22:05:24,717 | HTTP_CLIENT | INFO | Make GET request to http://localhost:56733/items
+2026-05-01 22:05:24,723 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/items
+2026-05-01 22:05:24,724 | BASE_ASSERTIONS | INFO | Check that response status code equals to 200
+2026-05-01 22:05:24,724 | STORE_ITEM_ASSERTIONS | INFO | Check that item name 'uvazquez' is in the item list
+2026-05-01 22:05:24,725 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

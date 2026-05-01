@@ -1,0 +1,14 @@
+2026-05-01 22:05:25,333 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:25,342 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:25,343 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:25,349 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:25,350 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/user_info/46
+2026-05-01 22:05:25,361 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/user_info/46
+2026-05-01 22:05:25,364 | HTTP_CLIENT | INFO | Make GET request to http://localhost:56733/user_info/46
+2026-05-01 22:05:25,365 | HTTP_CLIENT | INFO | Got response 500 Internal Server Error from http://localhost:56733/user_info/46
+2026-05-01 22:05:25,365 | BASE_ASSERTIONS | INFO | Check that response status code equals to 500
+2026-05-01 22:05:25,365 | USER_INFO_ASSERTIONS | INFO | Check internal server error
+2026-05-01 22:05:25,365 | BASE_ASSERTIONS | INFO | Check that "description" equals to "Server Error"
+2026-05-01 22:05:25,365 | BASE_ASSERTIONS | INFO | Check that "error" equals to "Internal Error Server"
+2026-05-01 22:05:25,366 | BASE_ASSERTIONS | INFO | Check that "status_code" equals to "500"
+2026-05-01 22:05:25,366 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

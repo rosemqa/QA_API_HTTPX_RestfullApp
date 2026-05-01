@@ -1,0 +1,8 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/store/adrian44
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 401 UNAUTHORIZED from http://localhost:56733/store/adrian44
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 401
+INFO     STORE_ASSERTIONS:store.py:25 Check unauthorized error
+INFO     BASE_ASSERTIONS:base.py:18 Check that "description" equals to "Request does not contain an access token"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "error" equals to "Authorization Required"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "status_code" equals to "401"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

@@ -1,0 +1,14 @@
+2026-05-01 22:05:24,120 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,288 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,289 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,294 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,297 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/item/sgoodman
+2026-05-01 22:05:24,309 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/item/sgoodman
+2026-05-01 22:05:24,309 | BASE_ASSERTIONS | INFO | Check that response status code equals to 201
+2026-05-01 22:05:24,310 | STORE_ITEM_ASSERTIONS | INFO | Check store item name for add store item
+2026-05-01 22:05:24,310 | BASE_ASSERTIONS | INFO | Check that "name" equals to "sgoodman"
+2026-05-01 22:05:24,310 | STORE_ITEM_ASSERTIONS | INFO | Check add/update store item
+2026-05-01 22:05:24,310 | BASE_ASSERTIONS | INFO | Check that "price" equals to "253"
+2026-05-01 22:05:24,310 | BASE_ASSERTIONS | INFO | Check that "description" equals to "Reason pretty firm view through."
+2026-05-01 22:05:24,310 | BASE_ASSERTIONS | INFO | Check that "image" equals to "https://dummyimage.com/938x827"
+2026-05-01 22:05:24,311 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

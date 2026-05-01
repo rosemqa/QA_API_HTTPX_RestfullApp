@@ -1,0 +1,28 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/item/ashley24
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/item/ashley24
+INFO     HTTP_CLIENT:event_hooks.py:9 Make PUT request to http://localhost:56733/item/ashley24
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/item/ashley24
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 200
+INFO     STORE_ITEM_ASSERTIONS:store_item.py:11 Check add/update store item
+INFO     BASE_ASSERTIONS:base.py:18 Check that "price" equals to "106"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "description" equals to "Boy service worker spend. Either main pull road both."
+INFO     BASE_ASSERTIONS:base.py:18 Check that "image" equals to "https://placekitten.com/101/504"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/item/xmoore
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/item/xmoore
+INFO     HTTP_CLIENT:event_hooks.py:9 Make PUT request to http://localhost:56733/item/xmoore
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/item/xmoore
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 200
+INFO     STORE_ITEM_ASSERTIONS:store_item.py:11 Check add/update store item
+INFO     BASE_ASSERTIONS:base.py:18 Check that "price" equals to "81"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "description" equals to "Quality live friend maintain something return great language."
+INFO     BASE_ASSERTIONS:base.py:18 Check that "image" equals to "https://placekitten.com/84/976"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

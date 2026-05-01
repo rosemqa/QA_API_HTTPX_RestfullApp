@@ -1,0 +1,17 @@
+2026-05-01 22:05:25,175 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:25,190 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:25,191 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:25,249 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:25,251 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/user_info/42
+2026-05-01 22:05:25,259 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/user_info/42
+2026-05-01 22:05:25,260 | HTTP_CLIENT | INFO | Make DELETE request to http://localhost:56733/user_info/42
+2026-05-01 22:05:25,271 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/user_info/42
+2026-05-01 22:05:25,271 | BASE_ASSERTIONS | INFO | Check that response status code equals to 200
+2026-05-01 22:05:25,272 | USER_INFO_ASSERTIONS | INFO | Check delete user info
+2026-05-01 22:05:25,272 | BASE_ASSERTIONS | INFO | Check that "message" equals to "User info deleted."
+2026-05-01 22:05:25,272 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema
+2026-05-01 22:05:25,275 | HTTP_CLIENT | INFO | Make GET request to http://localhost:56733/user_info/42
+2026-05-01 22:05:25,280 | HTTP_CLIENT | INFO | Got response 404 NOT FOUND from http://localhost:56733/user_info/42
+2026-05-01 22:05:25,281 | BASE_ASSERTIONS | INFO | Check that response status code equals to 404
+2026-05-01 22:05:25,281 | USER_INFO_ASSERTIONS | INFO | Check get non_existent/deleted user info
+2026-05-01 22:05:25,282 | BASE_ASSERTIONS | INFO | Check that "message" equals to "User info not found"

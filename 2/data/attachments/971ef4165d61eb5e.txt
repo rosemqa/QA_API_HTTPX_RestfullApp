@@ -1,0 +1,8 @@
+2026-05-01 22:05:23,918 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/store/adrian44
+2026-05-01 22:05:23,922 | HTTP_CLIENT | INFO | Got response 401 UNAUTHORIZED from http://localhost:56733/store/adrian44
+2026-05-01 22:05:23,923 | BASE_ASSERTIONS | INFO | Check that response status code equals to 401
+2026-05-01 22:05:23,923 | STORE_ASSERTIONS | INFO | Check unauthorized error
+2026-05-01 22:05:23,923 | BASE_ASSERTIONS | INFO | Check that "description" equals to "Request does not contain an access token"
+2026-05-01 22:05:23,923 | BASE_ASSERTIONS | INFO | Check that "error" equals to "Authorization Required"
+2026-05-01 22:05:23,923 | BASE_ASSERTIONS | INFO | Check that "status_code" equals to "401"
+2026-05-01 22:05:23,927 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

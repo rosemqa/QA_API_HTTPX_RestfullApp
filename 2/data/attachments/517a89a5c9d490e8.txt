@@ -1,0 +1,10 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/item/xlucero
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 400 BAD REQUEST from http://localhost:56733/item/xlucero
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 400
+INFO     STORE_ITEM_ASSERTIONS:store_item.py:45 Check add item with empty 'store_id' field
+INFO     BASE_ASSERTIONS:base.py:18 Check that "message" equals to "{'store_id': 'Every item needs a store_id.'}"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

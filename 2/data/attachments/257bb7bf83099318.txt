@@ -1,0 +1,10 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make GET request to http://localhost:56733/balance/33
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 404 NOT FOUND from http://localhost:56733/balance/33
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 404
+INFO     USER_BALANCE_ASSERTIONS:user_balance.py:34 Check get empty user balance
+INFO     BASE_ASSERTIONS:base.py:18 Check that "message" equals to "Balance not found. Add money for user."
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

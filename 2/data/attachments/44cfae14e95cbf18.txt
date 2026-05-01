@@ -1,0 +1,28 @@
+2026-05-01 22:05:24,531 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,632 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,633 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,640 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,641 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/item/ashley24
+2026-05-01 22:05:24,759 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/item/ashley24
+2026-05-01 22:05:24,761 | HTTP_CLIENT | INFO | Make PUT request to http://localhost:56733/item/ashley24
+2026-05-01 22:05:24,772 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/item/ashley24
+2026-05-01 22:05:24,773 | BASE_ASSERTIONS | INFO | Check that response status code equals to 200
+2026-05-01 22:05:24,774 | STORE_ITEM_ASSERTIONS | INFO | Check add/update store item
+2026-05-01 22:05:24,774 | BASE_ASSERTIONS | INFO | Check that "price" equals to "106"
+2026-05-01 22:05:24,774 | BASE_ASSERTIONS | INFO | Check that "description" equals to "Boy service worker spend. Either main pull road both."
+2026-05-01 22:05:24,826 | BASE_ASSERTIONS | INFO | Check that "image" equals to "https://placekitten.com/101/504"
+2026-05-01 22:05:24,827 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema
+2026-05-01 22:05:24,873 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,903 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,904 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,907 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,909 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/item/xmoore
+2026-05-01 22:05:24,931 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/item/xmoore
+2026-05-01 22:05:24,933 | HTTP_CLIENT | INFO | Make PUT request to http://localhost:56733/item/xmoore
+2026-05-01 22:05:24,945 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/item/xmoore
+2026-05-01 22:05:24,945 | BASE_ASSERTIONS | INFO | Check that response status code equals to 200
+2026-05-01 22:05:24,945 | STORE_ITEM_ASSERTIONS | INFO | Check add/update store item
+2026-05-01 22:05:24,946 | BASE_ASSERTIONS | INFO | Check that "price" equals to "81"
+2026-05-01 22:05:24,946 | BASE_ASSERTIONS | INFO | Check that "description" equals to "Quality live friend maintain something return great language."
+2026-05-01 22:05:24,960 | BASE_ASSERTIONS | INFO | Check that "image" equals to "https://placekitten.com/84/976"
+2026-05-01 22:05:24,962 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

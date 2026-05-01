@@ -1,0 +1,19 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/user_info/36
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/user_info/36
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 200
+INFO     USER_INFO_ASSERTIONS:user_info.py:12 Check add user info
+INFO     BASE_ASSERTIONS:base.py:18 Check that "message" equals to "User info created successfully."
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema
+INFO     HTTP_CLIENT:event_hooks.py:9 Make GET request to http://localhost:56733/user_info/36
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/user_info/36
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 200
+INFO     USER_INFO_ASSERTIONS:user_info.py:26 Check get user info
+INFO     BASE_ASSERTIONS:base.py:18 Check that "city" equals to "South Curtisshire"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "street" equals to "Jon Ferry"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "phone" equals to "0542601026927"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "email" equals to "smorris@example.org"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

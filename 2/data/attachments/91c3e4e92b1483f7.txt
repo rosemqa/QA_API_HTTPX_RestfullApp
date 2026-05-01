@@ -1,0 +1,10 @@
+2026-05-01 22:05:24,970 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,992 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,993 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,998 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:25,000 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/user_info/15000
+2026-05-01 22:05:25,007 | HTTP_CLIENT | INFO | Got response 404 NOT FOUND from http://localhost:56733/user_info/15000
+2026-05-01 22:05:25,008 | BASE_ASSERTIONS | INFO | Check that response status code equals to 404
+2026-05-01 22:05:25,008 | USER_INFO_ASSERTIONS | INFO | Check user not found
+2026-05-01 22:05:25,008 | BASE_ASSERTIONS | INFO | Check that "message" equals to "User not found"
+2026-05-01 22:05:25,009 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

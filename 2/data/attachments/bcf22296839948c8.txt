@@ -1,0 +1,6 @@
+2026-05-01 22:05:23,801 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:23,950 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:23,951 | BASE_ASSERTIONS | INFO | Check that response status code equals to 201
+2026-05-01 22:05:23,952 | REGISTER_ASSERTIONS | INFO | Check register user
+2026-05-01 22:05:23,952 | BASE_ASSERTIONS | INFO | Check that "message" equals to "User created successfully."
+2026-05-01 22:05:23,953 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

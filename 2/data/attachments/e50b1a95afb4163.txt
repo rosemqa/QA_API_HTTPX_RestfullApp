@@ -1,0 +1,12 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/user_info/35
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 401 UNAUTHORIZED from http://localhost:56733/user_info/35
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 401
+INFO     USER_INFO_ASSERTIONS:user_info.py:60 Check unauthorized error
+INFO     BASE_ASSERTIONS:base.py:18 Check that "description" equals to "Request does not contain an access token"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "error" equals to "Authorization Required"
+INFO     BASE_ASSERTIONS:base.py:18 Check that "status_code" equals to "401"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

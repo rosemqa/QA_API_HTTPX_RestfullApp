@@ -1,0 +1,13 @@
+2026-05-01 22:05:25,038 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:25,048 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:25,050 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:25,055 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:25,057 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/balance/39
+2026-05-01 22:05:25,126 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/balance/39
+2026-05-01 22:05:25,127 | HTTP_CLIENT | INFO | Make GET request to http://localhost:56733/balance/39
+2026-05-01 22:05:25,133 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/balance/39
+2026-05-01 22:05:25,134 | BASE_ASSERTIONS | INFO | Check that response status code equals to 200
+2026-05-01 22:05:25,134 | USER_BALANCE_ASSERTIONS | INFO | Check get user balance
+2026-05-01 22:05:25,135 | BASE_ASSERTIONS | INFO | Check that "message" equals to "User balance is 846.0"
+2026-05-01 22:05:25,135 | BASE_ASSERTIONS | INFO | Check that "balance" equals to "846"
+2026-05-01 22:05:25,135 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

@@ -1,0 +1,12 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/item/xjohnson
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/item/xjohnson
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/item/xjohnson
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 400 BAD REQUEST from http://localhost:56733/item/xjohnson
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 400
+INFO     STORE_ITEM_ASSERTIONS:store_item.py:29 Check add store item twice
+INFO     BASE_ASSERTIONS:base.py:18 Check that "name" equals to "An item with name xjohnson already exists."
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

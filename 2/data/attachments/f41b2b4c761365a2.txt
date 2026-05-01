@@ -1,0 +1,10 @@
+2026-05-01 22:05:24,578 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,646 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,647 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,737 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,738 | HTTP_CLIENT | INFO | Make GET request to http://localhost:56733/store/fake_store
+2026-05-01 22:05:24,745 | HTTP_CLIENT | INFO | Got response 404 NOT FOUND from http://localhost:56733/store/fake_store
+2026-05-01 22:05:24,745 | BASE_ASSERTIONS | INFO | Check that response status code equals to 404
+2026-05-01 22:05:24,745 | STORE_ASSERTIONS | INFO | Check get store with not existed name
+2026-05-01 22:05:24,746 | BASE_ASSERTIONS | INFO | Check that "message" equals to "Store not found"
+2026-05-01 22:05:24,746 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

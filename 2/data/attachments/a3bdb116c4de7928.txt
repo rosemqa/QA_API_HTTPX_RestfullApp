@@ -1,0 +1,8 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 400 BAD REQUEST from http://localhost:56733/register
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 400
+INFO     REGISTER_ASSERTIONS:register.py:23 Check register user with existing username
+INFO     BASE_ASSERTIONS:base.py:18 Check that "message" equals to "A user with that username already exists"
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema

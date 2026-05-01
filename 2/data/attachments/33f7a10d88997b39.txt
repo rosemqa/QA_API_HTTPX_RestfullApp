@@ -1,0 +1,14 @@
+2026-05-01 22:05:25,204 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:25,295 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:25,296 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:25,301 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:25,303 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/user_info/45
+2026-05-01 22:05:25,311 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/user_info/45
+2026-05-01 22:05:25,313 | HTTP_CLIENT | INFO | Make DELETE request to http://localhost:56733/user_info/45
+2026-05-01 22:05:25,317 | HTTP_CLIENT | INFO | Got response 401 UNAUTHORIZED from http://localhost:56733/user_info/45
+2026-05-01 22:05:25,320 | BASE_ASSERTIONS | INFO | Check that response status code equals to 401
+2026-05-01 22:05:25,320 | USER_INFO_ASSERTIONS | INFO | Check unauthorized error
+2026-05-01 22:05:25,320 | BASE_ASSERTIONS | INFO | Check that "description" equals to "Request does not contain an access token"
+2026-05-01 22:05:25,320 | BASE_ASSERTIONS | INFO | Check that "error" equals to "Authorization Required"
+2026-05-01 22:05:25,320 | BASE_ASSERTIONS | INFO | Check that "status_code" equals to "401"
+2026-05-01 22:05:25,325 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

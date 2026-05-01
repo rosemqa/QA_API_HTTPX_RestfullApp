@@ -1,0 +1,17 @@
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 201 CREATED from http://localhost:56733/register
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/auth
+INFO     HTTP_CLIENT:event_hooks.py:9 Make POST request to http://localhost:56733/user_info/42
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/user_info/42
+INFO     HTTP_CLIENT:event_hooks.py:9 Make DELETE request to http://localhost:56733/user_info/42
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 200 OK from http://localhost:56733/user_info/42
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 200
+INFO     USER_INFO_ASSERTIONS:user_info.py:39 Check delete user info
+INFO     BASE_ASSERTIONS:base.py:18 Check that "message" equals to "User info deleted."
+INFO     SCHEMA_ASSERTIONS:schema.py:12 Validating JSON schema
+INFO     HTTP_CLIENT:event_hooks.py:9 Make GET request to http://localhost:56733/user_info/42
+INFO     HTTP_CLIENT:event_hooks.py:14 Got response 404 NOT FOUND from http://localhost:56733/user_info/42
+INFO     BASE_ASSERTIONS:base.py:10 Check that response status code equals to 404
+INFO     USER_INFO_ASSERTIONS:user_info.py:46 Check get non_existent/deleted user info
+INFO     BASE_ASSERTIONS:base.py:18 Check that "message" equals to "User info not found"

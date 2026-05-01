@@ -1,0 +1,10 @@
+2026-05-01 22:05:24,789 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,892 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,893 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,897 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,899 | HTTP_CLIENT | INFO | Make GET request to http://localhost:56733/balance/33
+2026-05-01 22:05:24,903 | HTTP_CLIENT | INFO | Got response 404 NOT FOUND from http://localhost:56733/balance/33
+2026-05-01 22:05:24,903 | BASE_ASSERTIONS | INFO | Check that response status code equals to 404
+2026-05-01 22:05:24,903 | USER_BALANCE_ASSERTIONS | INFO | Check get empty user balance
+2026-05-01 22:05:24,904 | BASE_ASSERTIONS | INFO | Check that "message" equals to "Balance not found. Add money for user."
+2026-05-01 22:05:24,904 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

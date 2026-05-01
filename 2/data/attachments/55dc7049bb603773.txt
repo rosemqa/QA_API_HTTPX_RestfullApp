@@ -1,0 +1,10 @@
+2026-05-01 22:05:24,145 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,269 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,270 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,273 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,285 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/item/dgarcia
+2026-05-01 22:05:24,295 | HTTP_CLIENT | INFO | Got response 400 BAD REQUEST from http://localhost:56733/item/dgarcia
+2026-05-01 22:05:24,296 | BASE_ASSERTIONS | INFO | Check that response status code equals to 400
+2026-05-01 22:05:24,296 | STORE_ITEM_ASSERTIONS | INFO | Check add item with empty 'price' field
+2026-05-01 22:05:24,296 | BASE_ASSERTIONS | INFO | Check that "message" equals to "{'price': 'This field cannot be left blank!'}"
+2026-05-01 22:05:24,297 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

@@ -1,0 +1,10 @@
+2026-05-01 22:05:23,866 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:23,885 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:23,886 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:23,953 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:23,955 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/store/april86
+2026-05-01 22:05:24,015 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/store/april86
+2026-05-01 22:05:24,015 | BASE_ASSERTIONS | INFO | Check that response status code equals to 201
+2026-05-01 22:05:24,015 | STORE_ASSERTIONS | INFO | Check add store
+2026-05-01 22:05:24,016 | BASE_ASSERTIONS | INFO | Check that "name" equals to "april86"
+2026-05-01 22:05:24,016 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema

@@ -1,0 +1,12 @@
+2026-05-01 22:05:24,377 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/register
+2026-05-01 22:05:24,388 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/register
+2026-05-01 22:05:24,389 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/auth
+2026-05-01 22:05:24,394 | HTTP_CLIENT | INFO | Got response 200 OK from http://localhost:56733/auth
+2026-05-01 22:05:24,396 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/item/xjohnson
+2026-05-01 22:05:24,405 | HTTP_CLIENT | INFO | Got response 201 CREATED from http://localhost:56733/item/xjohnson
+2026-05-01 22:05:24,406 | HTTP_CLIENT | INFO | Make POST request to http://localhost:56733/item/xjohnson
+2026-05-01 22:05:24,411 | HTTP_CLIENT | INFO | Got response 400 BAD REQUEST from http://localhost:56733/item/xjohnson
+2026-05-01 22:05:24,412 | BASE_ASSERTIONS | INFO | Check that response status code equals to 400
+2026-05-01 22:05:24,412 | STORE_ITEM_ASSERTIONS | INFO | Check add store item twice
+2026-05-01 22:05:24,412 | BASE_ASSERTIONS | INFO | Check that "name" equals to "An item with name xjohnson already exists."
+2026-05-01 22:05:24,413 | SCHEMA_ASSERTIONS | INFO | Validating JSON schema
