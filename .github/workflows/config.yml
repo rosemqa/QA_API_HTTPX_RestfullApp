@@ -45,8 +45,8 @@ jobs:
         run: |
           pytest --alluredir=allure-results --numprocesses 4 --reruns 1 -v
         env:
-          HTTP_CLIENT.URL: ${{secrets.HTTP_CLIENT.URL}}
-          HTTP_CLIENT.TIMEOUT: ${{secrets.HTTP_CLIENT.TIMEOUT}}
+          HTTP_CLIENT__URL: ${{secrets.HTTP_CLIENT__URL}}
+          HTTP_CLIENT__TIMEOUT: ${{secrets.HTTP_CLIENT__TIMEOUT}}
 
       - name: Stop Docker container
         if: always()
