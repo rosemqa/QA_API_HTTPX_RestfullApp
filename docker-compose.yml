@@ -1,0 +1,21 @@
+services:
+  api_tests:
+    image: tests
+    build: .
+    depends_on:
+      - app_server
+    volumes:
+      - .:/test_project
+    command: pytest --reruns 2 -n 4
+    network_mode: 'host'
+
+  app_server:
+    image: litovsky/flask-api-test
+    ports:
+      - 56733:80
+
+  report:
+    image: tests
+    volumes:
+      - .:/test_project
+    command: /bin/sh -c "allure generate allure_results --clean -o allure_report"
