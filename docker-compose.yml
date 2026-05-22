@@ -7,6 +7,9 @@ services:
     volumes:
       - .:/test_project
     command: pytest --reruns 2 -n 4
+    environment:
+      HTTP_CLIENT__URL: ${HTTP_CLIENT__URL}
+      HTTP_CLIENT__TIMEOUT: ${HTTP_CLIENT__TIMEOUT}
     network_mode: 'host'
 
   app_server:

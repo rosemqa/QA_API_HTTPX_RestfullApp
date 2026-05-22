@@ -11,6 +11,7 @@ from tools.assertions.payment import assert_pay_for_item, assert_payment_with_in
 from tools.assertions.schema import validate_json_schema
 
 
+@allure.epic('Payment')
 class TestPayment:
     @allure.title('Can pay for the item')
     def test_pay_for_item(
